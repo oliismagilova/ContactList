@@ -17,6 +17,7 @@ export interface User {
     phone: string
     isFavorite?: boolean
 }
+//adding comment to test
 
 const Contacts = () => {
     const [data, setData] = useState<User[]>([])
@@ -27,7 +28,7 @@ const Contacts = () => {
     const [favShow, setFavShow] = useState<boolean>(false);
     const [clicked, setClicked] = useState<boolean>(false);
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [contactsPerPage] = useState<number>(7)
+    const [contactsPerPage] = useState<number>(8)
 
 
     const isFind = (user: User, search: string) => {
