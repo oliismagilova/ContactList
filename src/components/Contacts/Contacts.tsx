@@ -28,7 +28,7 @@ const Contacts = () => {
     const [favShow, setFavShow] = useState<boolean>(false);
     const [clicked, setClicked] = useState<boolean>(false);
     const [currentPage, setCurrentPage] = useState<number>(1);
-    const [contactsPerPage] = useState<number>(8)
+    const [contactsPerPage] = useState<number>(7)
 
 
     const isFind = (user: User, search: string) => {
