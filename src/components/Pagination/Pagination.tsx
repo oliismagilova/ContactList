@@ -1,10 +1,8 @@
+import { useMemo } from "react";
 
 export default function Pagination({ contactsPerPage, totalContacts, paginate}:any) {
-    const pageNumbers=[];
 
-    for (let i=1; i<=Math.ceil(totalContacts/contactsPerPage); i++) {
-        pageNumbers.push(i)
-    }
+    const pageNumbers = useMemo(() => Array(Math.ceil(totalContacts/contactsPerPage)).fill(0).map((_, i) => i+1), [totalContacts, contactsPerPage])
 
     return (
         <div>
