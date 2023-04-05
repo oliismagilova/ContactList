@@ -17,7 +17,7 @@ export interface User {
     phone: string
     isFavorite?: boolean
 }
-//adding comment to test
+//adding comment to test 
 
 const Contacts = () => {
     const [data, setData] = useState<User[]>([])
